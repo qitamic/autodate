@@ -4,7 +4,7 @@
 #include <Misc.au3>
 
 #AutoIt3Wrapper_Icon=icon.ico
-#AutoIt3Wrapper_Res_Fileversion=2021.12.21.1105
+#AutoIt3Wrapper_Res_Fileversion=2023.07.28.1815
 #AutoIt3Wrapper_Res_Description=Auto date entering small program
 
 _Singleton("AutoDate",0)
@@ -84,10 +84,10 @@ Func AutoDate()
 		Case 1
 			$sOutput = "-" & @HOUR & @MIN
 		Case 2
-			For $i = 1 To 13 Step 1
+			For $i = 1 To 9 Step 1
 				$sOutputBs = $sOutputBs & "{BACKSPACE}"
 			Next
-			$sOutput = $sOutput & @YEAR & "-" & @MON & "-" & @MDAY
+			$sOutput = $sOutput & "-" & @MON & "-" & @MDAY
 		Case 3
 			For $i = 1 To 10 Step 1
 				$sOutputBs = $sOutputBs & "{BACKSPACE}"
